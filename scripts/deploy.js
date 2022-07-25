@@ -10,7 +10,7 @@ async function main() {
 
   await medium.deployed();
 
-  console.log("Medium deployed to:", Medium.address);
+  console.log("Medium deployed to:", medium.address);
 }
 
 main().catch((error) => {
