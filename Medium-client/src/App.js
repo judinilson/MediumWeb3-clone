@@ -5,12 +5,14 @@ import Blog from "./components/Blog";
 import Sidebar from "./components/Sidebar";
 import HomeAuth from "./pages/HomeAuth";
 import Rightbar from "./components/Rightbar";
-import logo from "./images/medium.png";
 import "./App.css";
-import { useMoralis } from "react-moralis";
 import { ConnectButton } from "web3uikit";
+import logo from "./images/medium.png";
+import { useMoralis } from "react-moralis";
+
 const App = () => {
   const { isAuthenticated } = useMoralis();
+
   return (
     <>
       {isAuthenticated ? (
